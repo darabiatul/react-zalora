@@ -4,17 +4,16 @@ import Zalora from './components/Zalora';
 import './App.css';
 
 import Navbar from './components/Navbar';
-import slider from './components/slider';
+import Slider from './components/Slider';
+import Content from './components/Content';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
-
-        <Switch>
-          <Route exact path="/" component={Zalora} />
-        </Switch>
-
+        <Navbar />
+        <Slider />
+        <Route path="/" component={Content} />
       </React.Fragment>
     );
   }
